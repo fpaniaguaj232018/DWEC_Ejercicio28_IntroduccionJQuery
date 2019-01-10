@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <title>(Ejemplo JQuery)</title>
+
+    <script>
+        $(document).ready(function(){
+            inicializar();
+        });
+        function inicializar(){
+            $("#hSaludo").html("HOLA A TODOS, FELIZ AÑO NUEVO");
+
+            $(".bTitulos").click(function(){
+                alert("HOLA");
+            });
+
+            $("img").mouseover(function(){
+                $(this).width(200);
+            });
+            $("img").mouseleave(function(){
+                $(this).width(100);
+            });
+
+        }
+
+    </script>
+</head>
+<body>
+    <img src="images/z1.jpg" width="100px">
+    <img src="images/z2.jpg" width="100px">
+    <img src="images/z3.jpg" width="100px">
+    <img src="images/z4.jpg" width="100px">
+    <img src="images/z5.jpg" width="100px">
+    <H1 id="hSaludo"></H1>
+    <H1>EJEMPLO JQUERY</H1>
+    <H2>PATATA</H2>
+    <p class="principal">Pochar las patatas y apartar</p>
+    <p>Cómete una patata y meteras la pata (José, 2019)</p>
+    <H2>CEBOLLA</H2>
+    <p class="principal">Picar las cebollas me hace llorar</p>
+    <p>Si comes cebollas...</p>
+    <H2>LENTEJAS</H2>
+    <p class="principal">Si quieres las tomas y si no las dejas</p>
+    <input class="bTitulos" type="button" value="Titulos">
+    <input class="bTitulos" type="button" value="Principales">
+    <input class="bTitulos" type="button" value="Párrafos">
+    <br>
+
+</body>
+</html>
